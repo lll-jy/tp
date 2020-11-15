@@ -50,7 +50,7 @@ Taskmania (based off AB3) is a **desktop application for a project leader to man
   e.g. in `add n/NAME`, `NAME` is a parameter which can be used as `add n/John Doe`.
 
 * One and only one item in parenthesis should be supplied by the user
-  e.g. `(ta/ASSIGNEE_GIHUB_USERNAME)||(td/DEADLINE)` can be used as "ta/Alice98" or "td/31-12-2020 10:00:00", but not as "ta/Alice98 td/31-12-2020 10:00:00" or "".
+  e.g. `(ta/ASSIGNEE_GIHUB_USERNAME)||(td/DEADLINE)` can be used as "`ta/Alice98`" or "`td/31-12-2020 10:00:00`", but not as "`ta/Alice98 td/31-12-2020 10:00:00`" or "` `".
 
 * Items in square brackets are optional.<br>
   e.g `n/NAME [tg/TAG]` can be used as `n/John Doe t/friend` or as `n/John Doe`.
@@ -368,7 +368,7 @@ Examples: `deletetask 2` deletes the second task shown in the displayed task lis
 
 ### 2.3.5 Filter tasks `filter`
 
-Filter tasks in the task list by various task attributes:
+Filters tasks in the task list by various task attributes:
   - by assignee's GitHub username - `ta/ASSIGNEE_GITHUB_USERNAME`
   - by task's name - `tn/KEYWORD [MORE_KEYWORDS]...`
   - by deadline (either specifying a deadline - `td/DEADLINE` or a time range for the deadline - `start/START_DATE end/END_DATE` )
@@ -528,7 +528,7 @@ Example: `deletefromproject Lucas98` removes Lucas98 from the current project.
 
 ### 2.4.4 Edit a teammate’s details `editteammate`
 
-Update the information of a teammate.
+Updates the information of a teammate.
 
 Valid scopes: `PROJECT`, `TASK`, `TEAMMATE`.
 
@@ -548,7 +548,7 @@ Example: `editteammate LucasTai98 mn/LucasTai ma/5 Hacker Way` changes the name 
 
 ### 2.4.5 View a teammate’s details `viewteammate`
 
-View all of a specific teammate's details.
+Views all of a specific teammate's details.
 
 Valid scopes: `PROJECT`, `TASK`, `TEAMMATE`.
 
